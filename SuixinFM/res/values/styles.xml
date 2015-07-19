@@ -1,0 +1,63 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="TitleStyle">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="MyTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 侧滑菜单栏UI布局属性 -->
+
+    <style name="setting_style">
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:background">@drawable/umeng_xp_shadow_bg</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- 发现栏UI布局属性 -->
+    <style name="find_style">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!-- 音乐播放底部按钮 -->
+    <style name="music_play_textview">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">musicPlayBottom</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">@drawable/text_style</item>
+    </style>
+
+</resources>

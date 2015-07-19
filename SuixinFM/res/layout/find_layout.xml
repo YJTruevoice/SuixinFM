@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- ViewPager滚动图片 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/find_viewpagerId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/find_viewPagertitleId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="我是标题哦!"
+                    android:textColor="#FFF" />
+
+                <!-- 导航圆点图片所在布局 -->
+
+                <LinearLayout
+                    android:id="@+id/find_navigLayoutId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+
+>>>>>>> .r288
+            <!-- 编辑搜索栏 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#f2eada"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/find_searchButtonId"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="#fff"
+                    android:drawableRight="@drawable/umeng_socialize_search_icon"
+                    android:gravity="center|left"
+                    android:onClick="onClick"
+                    android:text="输入心情听FM"
+                    android:textColor="#77787b" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 九宫格图标按钮 -->
+
+
+            <!-- 心情 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:background="#F2BE96" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="心情"
+                    android:textColor="#F2BE96"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/find_mood_agitatedId"
+                    style="@style/find_style"
+                     android:text="\n\n烦躁"
+                    android:background="@drawable/agitated"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_mood_sadId"
+                    style="@style/find_style"
+                    android:background="@drawable/sad"
+                    android:text="\n\n悲伤"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_mood_lonelinessId"
+                    style="@style/find_style"
+                    android:background="@drawable/loneliness"
+                    android:text="\n\n孤独"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/find_mood_forgoId"
+                    style="@style/find_style"
+                    android:background="@drawable/forgo"
+                    android:text="\n\n已弃疗"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_mood_decompressionId"
+                    style="@style/find_style"
+                    android:background="@drawable/decompression"
+                    android:text="\n\n减压"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_mood_howeverId"
+                    style="@style/find_style"
+                    android:background="@drawable/however"
+                    android:text="\n\n无奈"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/find_mood_happyId"
+                    style="@style/find_style"
+                    android:background="@drawable/happy"
+                    android:text="\n\n快乐"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_mood_touchId"
+                    style="@style/find_style"
+                    android:background="@drawable/touch"
+                    android:text="\n\n感动"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_mood_atseaId"
+                    style="@style/find_style"
+                    android:background="@drawable/atsea"
+                    android:text="\n\n迷茫"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <!-- 场景 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:background="#F2BE96" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="场景"
+                    android:textColor="#F2BE96"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/find_scene_sleepingId"
+                    style="@style/find_style"
+                    android:background="@drawable/sleeping"
+                    android:text="\n\n睡前"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_scene_travelId"
+                    style="@style/find_style"
+                    android:background="@drawable/travel"
+                    android:text="\n\n旅行"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_scene_walkId"
+                    style="@style/find_style"
+                    android:background="@drawable/walk"
+                    android:text="\n\n散步"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/find_scene_bybusId"
+                    style="@style/find_style"
+                    android:background="@drawable/bybus"
+                    android:text="\n\n坐车"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_scene_solitudeId"
+                    style="@style/find_style"
+                    android:background="@drawable/solitude"
+                    android:text="\n\n独处"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_scene_unloveId"
+                    style="@style/find_style"
+                    android:background="@drawable/unlove"
+                    android:text="\n\n失恋"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/find_scene_insomniaId"
+                    style="@style/find_style"
+                    android:background="@drawable/insomnia"
+                    android:text="\n\n失恋"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_scene_casualId"
+                    style="@style/find_style"
+                    android:background="@drawable/casual"
+                    android:text="\n\n随便"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/find_scene_boredId"
+                    style="@style/find_style"
+                    android:background="@drawable/bored"
+                    android:text="\n\n无聊"
+                    android:onClick="onClick" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 主播 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="20dp"
+                    android:background="#F2BE96" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="主播"
+                    android:textColor="#F2BE96"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/speak_moreButtonId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:drawableRight="@drawable/umeng_xp_detail365"
+                android:onClick="onClick"
+                android:text="更多"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/gridview_speakId"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:numColumns="2"
+            android:filterTouchesWhenObscured="true"
+            android:focusable="true"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+</ScrollView>

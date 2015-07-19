@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 评论(条数) -->
+
+    <RelativeLayout
+        android:id="@+id/comment_titleId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/active_bg"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/comment_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:clickable="true"
+            android:src="@drawable/back_arr" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="评论"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/comment_ListId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <!-- 编辑评论栏 -->
+
+    <LinearLayout
+        android:id="@+id/comment_editId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="left|center"
+            android:hint="有什么就说吧" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:background="@drawable/comment_input" />
+    </LinearLayout>
+
+</LinearLayout>

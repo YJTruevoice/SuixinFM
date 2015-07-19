@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f5ec"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+               android:onClick="mapBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/app_back_night"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f26522"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="意见反馈"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        
+     <EditText
+        android:id="@+id/edit_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:cursorVisible="true"
+        android:ellipsize="none"
+        android:gravity="top"
+        android:inputType="text"
+        android:hint="请输入您的宝贵意见"
+        android:background="@android:drawable/editbox_background_normal"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/submit_feedback_btn"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundcolor_clickbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="提   交"
+        android:textColor="#fffffb" />
+
+</LinearLayout>

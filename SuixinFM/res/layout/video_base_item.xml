@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/video_ImageViewId"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/view_titleId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我是标题我是标题我是标题我是标题我是标题" />
+
+        <TextView
+            android:id="@+id/totalCountId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="hehe"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp" >
+
+            <TextView
+                android:id="@+id/communtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="pin"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/updataTimeI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hehe"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- textView按钮点击下状态 -->
+    <item android:drawable="@color/textcolor" android:state_pressed="true"></item>
+
+</selector>

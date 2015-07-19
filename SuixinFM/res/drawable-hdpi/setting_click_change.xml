@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- 获取焦点状态资源 -->
+    <item android:state_focused="true">
+        <color android:color="#F2BE96"/>
+    </item>
+    <!-- 按下状态资源 -->
+    <item android:state_pressed="true">
+        <color android:color="#F2BE96"/>
+    </item>
+    <!-- 选择状态资源 -->
+    <item android:state_selected="true">
+        <color android:color="#F2BE96"/>
+    </item>
+    <!-- 默认状态资源 -->
+    <item android:state_selected="true">
+        <color android:color="#000"/>
+    </item>
+
+</selector>

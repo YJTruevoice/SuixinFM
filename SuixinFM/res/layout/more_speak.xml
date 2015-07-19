@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/speak_linearId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#70CDCECE">
+        
+        <ImageButton 
+            android:id="@+id/speakImageButtonId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/back_arr"
+            android:layout_marginLeft="5dp"
+            android:onClick="speakBack"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="主播"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    
+     <TextView 
+          android:id="@+id/speak_textId"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="#CDCECE"
+          android:layout_below="@id/speak_linearId"
+          />
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/speak_ListId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/speak_textId"
+        />
+
+</RelativeLayout>

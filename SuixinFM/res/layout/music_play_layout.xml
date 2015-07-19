@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/music_play_bgId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_music_play_bgId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/my_menu_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/music_play_topBackId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_arr"
+            android:clickable="true"
+            android:onClick="musicPlayBottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/music_play_btnId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pause"
+                    android:gravity="center" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/music_play_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="爱情的真假,只有身体知道"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/music_play_speak"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="主播:秦桑"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/music_seekbarId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/music_play_commentId"
+                style="@style/music_play_textview"
+                android:layout_marginBottom="10dp"
+               
+                android:drawableTop="@drawable/comment"
+                android:text="评论" />
+
+            <TextView
+                android:id="@+id/music_play_collectId"
+                style="@style/music_play_textview"
+                android:drawableTop="@drawable/like"
+                android:text="收藏" />
+
+            <TextView
+                android:id="@+id/music_play_shareId"
+                style="@style/music_play_textview"
+                android:drawableTop="@drawable/share"
+                android:text="分享" />
+
+            <TextView
+                android:id="@+id/music_play_downId"
+                style="@style/music_play_textview"
+                android:drawableTop="@drawable/download"
+                android:text="下载" />
+
+            <TextView
+                android:id="@+id/music_play_article"
+                style="@style/music_play_textview"
+                android:drawableTop="@drawable/article"
+                android:text="原文" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

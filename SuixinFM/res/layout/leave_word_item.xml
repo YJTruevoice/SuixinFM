@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 留言item -->
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/leave_word_item_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/defaultimg" />
+
+    <TextView
+        android:id="@+id/leave_word_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/leave_word_item_iv"
+        android:text="用户名"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/leave_word_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leave_word_item_username"
+        android:layout_toRightOf="@+id/leave_word_item_iv"
+        android:gravity="center|right"
+        android:text="时间"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/leave_word_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leave_word_item_time"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/leave_word_item_iv"
+        android:lineSpacingExtra="3dp"
+        android:text="内容"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/le"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/leave_word_item_iv"
+        android:background="#FFF" />
+
+</RelativeLayout>

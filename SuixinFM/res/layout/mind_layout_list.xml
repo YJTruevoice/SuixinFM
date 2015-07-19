@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/mind_linearId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="#f26522">
+        
+        <ImageButton 
+            android:id="@+id/mindImageButtonId"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/white_arr"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:onClick="mindBack"/>
+        
+        <TextView 
+            android:id="@+id/mind_textViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:text="主播"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+    
+     <TextView 
+          android:id="@+id/mind_textId"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:background="#CDCECE"
+          android:layout_below="@id/mind_linearId"
+          />
+     
+    <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/mind_ListId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mind_textId"
+        />
+
+</RelativeLayout>

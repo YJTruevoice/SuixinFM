@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	 <RelativeLayout 
+        android:id="@+id/code_linearId"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#F26522">
+        
+        <ImageButton 
+            android:id="@+id/codeBackId"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/white_arr"
+            android:layout_marginLeft="5dp"
+            android:onClick="onClick"
+            />
+        
+        <TextView 
+            android:id="@+id/codeButtonId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#fff"
+            android:text="扫一扫"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_toRightOf="@id/codeBackId"
+            />
+        
+    </RelativeLayout>
+    
+	<TextView android:id="@+id/codeTextId"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#F26522"
+	    android:layout_below="@id/code_linearId"/>
+    
+	 <Button
+        android:id="@+id/QrSubmitId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#F26522"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="前往"
+        android:textSize="20sp" />
+
+</RelativeLayout>

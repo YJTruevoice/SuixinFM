@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 发现页面主播的gridview的item布局 -->
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/gridview_speak_imageViewId"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/gridview_speak_titleId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/gridview_speak_imageViewId"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="主播"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gridview_speak_fmnumId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridview_speak_titleId"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/gridview_speak_imageViewId"
+        android:gravity="center_vertical"
+        android:padding="3dp"
+        android:text="节目"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/gridview_speak_imageViewId"
+        android:background="#F3F4F4" />
+
+</RelativeLayout>

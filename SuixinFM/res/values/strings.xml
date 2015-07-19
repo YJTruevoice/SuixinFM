@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">随心FM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="setting_register">立即登录</string>
+    <string name="setting_register_hint">用户名</string>
+    <string name="setting_bookstore_radar">书店雷达</string>
+    <string name="setting_timming_close">定时关闭</string>
+    <string name="setting_check_clock">心情闹钟</string>
+    <string name="setting_thinkChange">二维码扫描</string>
+    <string name="setting_chatroom">抒情小屋</string>
+    <string name="setting_apply_choice">应用精选</string>
+    <string name="setting_share_friend">分享给好友</string>
+    <string name="setting_detection_newVersion">检测新版本</string>
+    <string name="setting_opinion_feedback">意见反馈</string>
+    <string name="check_username">用户名不能为空</string>
+    <string name="check_password">密码不能为空</string>
+
+    <color name="textcolor">#cde6c7</color>
+
+    <string-array name="welcome_message">
+        <item>主人,奴婢在此等候多时了</item>
+        <item>主人,近来一切可好</item>
+        <item>欢迎归来,我亲爱的主人</item>
+        <item>主人,你怎么又不理我了</item>
+        <item>亲爱的主人,爱你</item>
+    </string-array>
+
+</resources>

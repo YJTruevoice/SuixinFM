@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 主播详情 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#F26522"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/speak_nameId"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/speak_detail_top_back"
+            android:gravity="center"
+            android:text="主播名"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/speak_detail_top_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:clickable="true"
+            android:onClick="speakDetail"
+            android:src="@drawable/white_arr" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/my_menu_bg"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/speak_iamge"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cover_default" />
+
+        <TextView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/speak_programId"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="speakDetail"
+                android:text="节目"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/my_collect_btnId"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/speak_leave_wordId"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/text_style"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="speakDetail"
+                android:text="留言"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/my_collect_btnId"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="#FFF"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/speak_detail_viewpger"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
